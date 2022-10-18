@@ -10,7 +10,6 @@
       "48": "images/meta48.png",
       "64": "images/meta64.png"
     }
-   // ,"default_popup": "popup.html"
   },
   "icons": {
     "16": "images/meta16.png",
@@ -36,5 +35,4 @@
     "contextMenus",
     "clipboardWrite"
   ]
-  // ,"options_page": "options.html"
 }

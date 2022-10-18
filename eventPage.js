@@ -109,10 +109,10 @@ chrome.contextMenus.onClicked.addListener((clickData) => {
         let selectedText = fixedEncodeURI(clickData.selectionText);        
         let timeStampStr = selectedText.match(/(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})/);
         let timeStamp = new Date(timeStampStr[1], timeStampStr[2], timeStampStr[3], timeStampStr[4], timeStampStr[5], timeStampStr[6]);
-        let videoFile = selectedText.match(/(2\d)?([a-zA-Z0-9_.]*mp4)/)[2];
+        let videoFile = selectedText.match(/(2\d)?([a-zA-Z0-9_.-]*mp4)/)[2];
         let vDate = formatVideoDateToDay(timeStamp);
 
-        var url = "https://192.168.8.101:1980/video/" + vDate + "/" + videoFile
+        var url = "https://cbj.my.to:21980/video/" + vDate + "/" + videoFile
         
         var createData = {
             "url": url
