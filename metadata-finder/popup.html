@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <head>
+        <title>预算管理</title>
+        <link rel="stylesheet" href="./css/popup.css">
+        <script src="jquery-3.1.0.min.js"></script>
+        <script src="popup.js"></script>
+    </head>
+
+<body>
+    <div id="overview">
+        <div class="headTop">
+                <img src="./images/jjy32.png" alt="" /> 预算管理
+        </div>
+        <div class="tabstack">
+            <div class="head">
+                <div class="blocked">
+                    <span class="blocked-tab">总支出：<span id="total">0</span></h2></span>
+                </div>
+                <div class="total blocked-all">消费限额：<span id="limit">0</span></div>
+            </div>
+        </div>
+        <p class="inputTitle">输入消费金额：</p>
+        <input id="amount" type="text" placeholder="输入金额">
+        <div class="container">
+            <button id="spendAmount" type="submit" class="btn btn1">支出</button>
+        </div>
+    </div>
+</body>
+
+</html>

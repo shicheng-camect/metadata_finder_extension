@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/options.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/popup.css">
+
+    <head>
+        <title>预算管理设置选项</title>
+        <script src="jquery-3.1.0.min.js"></script>
+        <script src="options.js"></script>
+    </head>
+
+<body>
+
+    <div class="settings-wrap">
+        <div class="wlimit">
+            <div class="settings-sidebar">
+                <div class="logo"><img src="images/jjy999.jpg" alt=""></div>
+                <ul class="nav nav-tabs">
+                    <li>
+                        <a href="#" class="nav__item active" data-tab="#general-settings">
+                            <span i18n="options_general_settings">常规设置</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav__item" data-tab="#about">
+                            <span>
+                                <span i18n="options_about">关于</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="general-settings" class="settings-content tab-pane" style="display: block;">
+                <div class="page-title" i18n="options_general_settings_title">设置</div>
+                <div class="settings-body">
+                    <div class="subtitle settings-body-subtitle" i18n="options_general_settings">常规设置</div>
+                    <ul class="opts-list">
+                        <li class="active">
+                            <div aria-labelledby="allowAcceptableAds" class="opt-desc">
+                                <label tabindex="0" for="allowAcceptableAds" class="title"
+                                    i18n="options_allow_acceptable_ads">消费限额: </label>
+                                <input id="limit" type="text" placeholder="输入金额">
+                                <!-- <div class="opt-state">
+                                    1111
+                                </div> -->
+                            </div>
+                            <div class="opt-state">
+                                <div class="toggler-wr" role="checkbox" aria-checked="true" tabindex="0">
+                                    <button id="saveLimit" type="button">保存</button>
+                                    <button id="resetTotal" type="button">重置</button>
+                                    <!-- 激活按钮 -->
+                                    <!-- <div class="toggler active"></div> -->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="active">
+                            <div aria-hidden="true" class="opt-desc">
+                                <label tabindex="0" for="filtersUpdatePeriodSelect" class="title"
+                                    i18n="options_set_update_interval">其他</label>
+                            </div>
+                            <select class="opt-select" id="filtersUpdatePeriodSelect">
+                                <option value="-1">默认</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="settings-wrap">
+        <div class="wlimit">
+            <div class="settings-sidebar">
+                <!-- <div class="logo"><img src="images/jjy999.jpg" alt=""></div> -->
+                <ul class="nav nav-tabs">
+                    <li>
+                        <a href="#" class="nav__item active" data-tab="#general-settings">
+                            <!-- <span i18n="options_general_settings">常规设置</span> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__item" data-tab="#about">
+                            <span>
+                                <!-- <span i18n="options_about">关于</span> -->
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="about" class="settings-content tab-pane" style="display: block;">
+                <div class="page-title" i18n="options_about">关于</div>
+                <div class="settings-content">
+                    <div class="settings-body">
+                        <div class="about-opt">
+                            <div class="logo about-opt__logo"><img src="images/jjy64.png" alt=""></div>
+                            <div class="about-opt__desc">
+                                <div id="about-version-placeholder" class="about-opt__version">版本 3.6.16</div>
+                                <div class="about-opt__desc">
+                                    <div class="about-opt__desc-item">
+                                        © 2009-<span class="current-year">2021</span> AdGuard Software Ltd.
+                                    </div>
+                                    <div class="about-opt__desc-item">
+                                        <span i18n="options_copyright">保留所有版权。</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-opt__menu">
+                                <a target="_blank"
+                                    href="https://adguard.com/forward.html?action=eula&amp;from=options_screen&amp;app=browser_extension"
+                                    i18n="options_license_agreement" class="about-opt__menu-item">最终用户许可协议</a>
+                                <a target="_blank"
+                                    href="https://adguard.com/forward.html?action=privacy&amp;from=options_screen&amp;app=browser_extension"
+                                    i18n="options_privacy_policy" class="about-opt__menu-item">隐私策略</a>
+                                <a target="_blank"
+                                    href="https://adguard.com/forward.html?action=acknowledgments&amp;from=options_screen&amp;app=browser_extension"
+                                    i18n="options_acknowledgment" class="about-opt__menu-item">致谢</a>
+                                <a target="_blank"
+                                    href="https://adguard.com/forward.html?action=github_options&amp;from=options_screen&amp;app=browser_extension"
+                                    i18n="options_github" class="about-opt__menu-item">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

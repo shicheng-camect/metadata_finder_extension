@@ -1,0 +1,97 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+:root {
+    font-size: 16px;
+}
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+body {
+    background-color: #fff;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    height: 100%;
+    line-height: 1;
+    overflow-y: scroll;
+}
+
+a {
+    color: currentColor;
+}
+
+button, a, select, span, label, .toggler-wr {
+    outline: none;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.opt-desc{
+    width: 70%;
+}
+
+#limit {
+    width:70%;
+    /* height: 40px; */
+    outline-style: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-left: 20px;
+    padding: 13px 14px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Microsoft soft";
+}
+#limit:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}

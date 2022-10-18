@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "metadata查找器",
+  "description": "快速获取邮件中视频的metadata列表",
+  "version": "1.1",
+  "action": {
+    "default_icon": {
+      "16": "images/meta16.png",
+      "32": "images/meta32.png",
+      "48": "images/meta48.png",
+      "64": "images/meta64.png"
+    }
+   // ,"default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "images/meta16.png",
+    "32": "images/meta32.png",
+    "48": "images/meta48.png",
+    "64": "images/meta64.png"
+  },
+  "background": {
+    "service_worker": "eventPage.js",
+    "type": "module"
+  },
+   "content_scripts": [ // this is what you need to add
+      {
+         "matches": [
+            "<all_urls>"
+         ],
+         "js": ["content.js"]
+      }
+   ],
+  "permissions": [
+    "tabs",
+    "notifications",
+    "contextMenus",
+    "clipboardWrite"
+  ]
+  // ,"options_page": "options.html"
+}
